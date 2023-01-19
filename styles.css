@@ -32,6 +32,12 @@
     --gold-tint-three: #B38728;
     --gold-tint-four: #FBF5B7;
     --gold-tint-five: #AA771C;
+    --bright-pink: #ff2a6d;
+    --bright-orange: #ffa500;
+    --light-blue: #d1f7ff;
+    --neon-blue: #05d9e8;
+    --dark-blue: #01012b;
+    --fade: rgba(111, 0, 255, 0);
 }
 
 /*GOLD LINEAR*/
@@ -173,10 +179,14 @@ h3 {
 /* --------------- 4.1 Header ------------------------- */
 #header {
     background: var(--sand-shade-one);
-    border-bottom: 5px solid black;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+}
+
+.header_gold-border {
+    border-bottom: 10px solid;
+    border-image: linear-gradient(90deg, var(--gold-tint-one), var(--gold-tint-two), var(--gold-tint-three), var(--gold-tint-four), var(--gold-tint-five)) 1;
 }
 
 .header__navigation {
@@ -213,13 +223,21 @@ h3 {
 }
 
 .cta-article__image-wrapper {
+    display: inline-block;
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 1;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 5px;
+    background: linear-gradient(90deg, var(--gold-tint-one), var(--gold-tint-two), var(--gold-tint-three), var(--gold-tint-four), var(--gold-tint-five));
 }
 
 .cta-article__image-wrapper img {
     width: 100%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    vertical-align: middle;
 }
 
 /* --------------- 4.3 About --------------------------- */
@@ -239,13 +257,21 @@ h3 {
 }
 
 .about-article__image-wrapper {
+    display: inline-block;
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 1;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 5px;
+    background: linear-gradient(90deg, var(--gold-tint-one), var(--gold-tint-two), var(--gold-tint-three), var(--gold-tint-four), var(--gold-tint-five));
 }
 
 .about-article__image-wrapper img {
     width: 100%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    vertical-align: middle;
 }
 
 .about-article__aside-two {
@@ -268,13 +294,21 @@ h3 {
 }
 
 .prices-article__image-wrapper {
+    display: inline-block;
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 1;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 5px;
+    background: linear-gradient(90deg, var(--gold-tint-one), var(--gold-tint-two), var(--gold-tint-three), var(--gold-tint-four), var(--gold-tint-five));
 }
 
 .prices-article__image-wrapper img {
     width: 100%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    vertical-align: middle;
 }
 
 /* --------------- 4.5 Contact------------------------ */
@@ -291,13 +325,26 @@ h3 {
 }
 
 .contact-article__image-wrapper {
+    display: inline-block;
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 1;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 5px;
+    background: linear-gradient(90deg, var(--gold-tint-one), var(--gold-tint-two), var(--gold-tint-three), var(--gold-tint-four), var(--gold-tint-five));
 }
 
 .contact-article__image-wrapper img {
     width: 100%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    vertical-align: middle;
+}
+
+.contact-article__form {
+    display: flex;
+    flex-direction: column;
 }
 
 /* --------------- 4.6 Footer ------------------------ */
