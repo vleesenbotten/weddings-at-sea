@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Shrikhand&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Call To Action
+        4.3 About
+        4.4 Prices
+        4.5 Contact
+        4.6 Footer
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+:root {
+    --black: #161616;
+    --lavender: #C5B9CD;
+    --pastel-blue: #92A8D1;
+    --sand-shade-one: #EEEAE3;
+    --sand-shade-two: #E4DED3;
+    --sand-shade-three: #DBD2C3;
+    --sand-shade-four: #D1C6B3;
+    --gold-tint-one: #BF953F;
+    --gold-tint-two: #FCF6BA;
+    --gold-tint-three: #B38728;
+    --gold-tint-four: #FBF5B7;
+    --gold-tint-five: #AA771C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fanwood Text', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black);
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2, h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* -------------- 3.1 Reusable ----------------------- */
+
+.outer-container {
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-column {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.inner-container-row {
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.default-area-padding {
+    padding: 30px 100px;
+}
+
+/* --------------- 3.2 Other/Borders-For-Development --------------------------- */
+.header__info-box {
+    border: 2px solid green;
+}
+
+.header__icon-img {
+    border: 2px solid yellow;
+}
+
+.header__navigation {
+    border: 2px dotted orange;
+}
+
+.about-article {
+    border: 5px dashed deeppink;
+}
+
+.about-article__info-container {
+    border: 5px dashed darkblue;
+}
+
+.about-article__image-wrapper {
+    border: 2px solid black;
+}
+
+.cta-article {
+    border: 5px dashed deeppink;
+}
+
+.cta-article__info-container {
+    border: 5px dashed darkblue;
+}
+
+.cta-article__image-wrapper {
+    border: 2px solid black;
+}
+
+.prices-article {
+    border: 5px dashed deeppink;
+}
+
+.prices-article__info-container {
+    border: 5px dashed darkblue;
+}
+
+.prices-article__image-wrapper {
+    border: 2px solid black;
+}
+
+.contact-article {
+    border: 5px dashed deeppink;
+}
+
+.contact-article__info-container {
+    border: 5px dashed darkblue;
+}
+
+.contact-article__image-wrapper {
+    border: 2px solid black;
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.header__navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__navigation ul {
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header__navigation a {
+    color: var(--black);
+}
+
+
+/* --------------- 4.2 Call To Action ------------------- */
+.cta-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta-article__info-container {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.cta-article__image-wrapper {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.cta-article__image-wrapper img {
+    width: 100%;
+}
+
+/* --------------- 4.3 About --------------------------- */
+.about-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-article__info-container {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.about-article__image-wrapper {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.about-article__image-wrapper img {
+    width: 100%;
+}
+
+
+/* --------------- 4.4 Prices------------------------ */
+.prices-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prices-article__info-container {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.prices-article__image-wrapper {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.prices-article__image-wrapper img {
+    width: 100%;
+}
+
+/* --------------- 4.5 Contact------------------------ */
+.contact-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-article__info-container {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.contact-article__image-wrapper {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.contact-article__image-wrapper img {
+    width: 100%;
+}
+
+/* --------------- 4.6 Footer ------------------------ */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (max-width: 567px) {
+
+    .default-area-padding {
+        padding: 10px 20px;
+    }
+
+    .cta-article {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .cta-article__image-wrapper {
+        flex-basis: auto;
+    }
+
+    .cta-article__info-container {
+        flex-basis: auto;
+    }
+
+    .about-article {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about-article__image-wrapper {
+        flex-basis: auto;
+    }
+
+    .about-article__info-container {
+        flex-basis: auto;
+    }
+
+    .prices-article {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .prices-article__image-wrapper {
+        flex-basis: auto;
+    }
+
+    .prices-article__info-container {
+        flex-basis: auto;
+    }
+
+    .contact-article {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contact-article__image-wrapper {
+        flex-basis: auto;
+    }
+
+    .contact-article__info-container {
+        flex-basis: auto;
+    }
+}
+
