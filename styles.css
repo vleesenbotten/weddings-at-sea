@@ -34,6 +34,10 @@
     --gold-tint-five: #AA771C;
 }
 
+/*GOLD LINEAR*/
+/*background: rgb(191,149,63);*/
+/*background: linear-gradient(90deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 25%, rgba(179,135,40,1) 50%, rgba(251,245,183,1) 75%, rgba(170,119,28,1) 100%);*/
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +45,8 @@
 }
 
 body {
+    background: var(--sand-shade-one);
+    background: linear-gradient(189deg, var(--sand-shade-one) 0%, var(--sand-shade-one) 25%, var(--sand-shade-two) 50%, var(--sand-shade-three) 75%, var(--sand-shade-four) 100%);
     font-family: 'Fanwood Text', serif;
     font-weight: 400;
     font-size: 20px;
@@ -58,7 +64,7 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 38px;
 }
 
 h3 {
@@ -165,6 +171,14 @@ h3 {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+#header {
+    background: var(--sand-shade-one);
+    border-bottom: 5px solid black;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
 .header__navigation {
     display: flex;
     justify-content: flex-end;
@@ -220,6 +234,8 @@ h3 {
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .about-article__image-wrapper {
@@ -230,6 +246,11 @@ h3 {
 
 .about-article__image-wrapper img {
     width: 100%;
+}
+
+.about-article__aside-two {
+    border-left: 2px solid black;
+    padding-left: 10px;
 }
 
 
@@ -281,6 +302,35 @@ h3 {
 
 /* --------------- 4.6 Footer ------------------------ */
 
+#footer {
+    /*background: var(--sand-shade-four);*/
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+}
+
+.footer__button-box-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__button-box {
+    border: solid 2px yellow;
+}
+
+.footer__button-box ul {
+    flex-basis: 200px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /*justify-content: space-between;*/
+    gap: 10px;
+}
+
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
 @media screen and (max-width: 567px) {
 
@@ -312,6 +362,7 @@ h3 {
 
     .about-article__info-container {
         flex-basis: auto;
+        flex-direction: column;
     }
 
     .prices-article {

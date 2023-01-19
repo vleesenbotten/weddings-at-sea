@@ -36,7 +36,8 @@
             <article class="cta-article">
                 <div class="cta-article__info-container">
                     <h1>Bruiloft aan zee</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur cupiditate distinctio laborum perspiciatis quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur cupiditate distinctio
+                        laborum perspiciatis quibusdam.</p>
                 </div>
 
                 <div class="cta-article__image-wrapper">
@@ -56,14 +57,20 @@
                 </div>
 
                 <div class="about-article__info-container">
-                    <div>
+                    <div class="about-article__aside-one">
                         <h2>Persoonlijke weddingplanner</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi modi molestias necessitatibus perferendis perspiciatis placeat voluptatem. Accusamus asperiores aspernatur cum dolore dolorem enim est facilis fugit hic iure iusto laudantium nulla obcaecati, quae repellat soluta tempore totam unde voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi modi molestias
+                            necessitatibus perferendis perspiciatis placeat voluptatem. Accusamus asperiores aspernatur
+                            cum dolore dolorem enim est facilis fugit hic iure iusto laudantium nulla obcaecati, quae
+                            repellat soluta tempore totam unde voluptatem?</p>
                     </div>
 
-                    <div>
+                    <div class="about-article__aside-two">
                         <h3>Alles uit handen</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam asperiores beatae blanditiis consequatur consequuntur cupiditate deleniti dicta dolorem doloribus ea est fugit, illo ipsa ipsam iste maxime modi molestias nobis numquam obcaecati, odit perferendis possimus quam quasi vitae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam asperiores
+                            beatae blanditiis consequatur consequuntur cupiditate deleniti dicta dolorem doloribus ea
+                            est fugit, illo ipsa ipsam iste maxime modi molestias nobis numquam obcaecati, odit
+                            perferendis possimus quam quasi vitae.</p>
                     </div>
                 </div>
 
@@ -78,7 +85,8 @@
             <article class="prices-article">
                 <div class="prices-article__info-container">
                     <h2>Prijzen bruiloft aan zee</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur cupiditate distinctio laborum perspiciatis quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur cupiditate distinctio
+                        laborum perspiciatis quibusdam.</p>
                 </div>
 
                 <div class="prices-article__image-wrapper">
@@ -99,7 +107,26 @@
 
                 <div class="contact-article__info-container">
                     <h2>Neem contact met ons op</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur cupiditate distinctio laborum perspiciatis quibusdam.</p>
+                    <form class="contact-article__form">
+                        <label for="name-field">
+                            <input type="text" id="name-field" name="name" placeholder="naam">
+                        </label>
+
+                        <label for="email-field">
+                            <input type="text" id="email-field" name="email" placeholder="e-mail">
+                        </label>
+
+                        <label for="phonenumber-field">
+                            <input type="text" id="phonenumber-field" name="phone-number" placeholder="06">
+                        </label>
+
+                        <label for="message-field">
+                            Message
+                            <textarea name="message" id="message-field" cols="30" rows="10"
+                                      placeholder="jouw bericht"></textarea>
+                        </label>
+                        <button type="submit">verzenden</button>
+                    </form>
                 </div>
 
             </article>
@@ -109,11 +136,18 @@
 
 </main>
 
-<footer id="footer" class="outer-container">
-    <div class="inner-container-column">
-        <h3>To top button and socials here - make it stick.</h3>
+<footer id="footer" class="outer-container footer__button-box-container">
+    <div class="footer__button-box">
+        <ul>
+            <li>icon</li>
+            <li>icon</li>
+            <li>icon</li>
+        </ul>
+        <button onclick="topFunction()" id="footer-button" title="Go to top">to top</button>
     </div>
 </footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>
